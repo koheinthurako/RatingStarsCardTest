@@ -9,7 +9,11 @@ stars.forEach((star, index1) => {
                 star.addEventListener('click', () => {
                     star.classList.remove("active");
                 });
-            };
+            } else if(!star.classList.contains("active")) {
+                star.addEventListener('click', () => {
+                    star.classList.add("active");
+                })
+            }
         });
     })
 });
