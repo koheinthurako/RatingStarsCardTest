@@ -1,4 +1,9 @@
+const ratingBox = document.querySelector(".rating-box");
 const stars = document.querySelectorAll(".stars i");
+
+window.addEventListener('DOMContentLoaded', () => {
+    ratingBox.classList.add("introAnimate");
+});
 
 stars.forEach((star, index1) => {
     star.addEventListener('click', _ => {

@@ -49,3 +49,28 @@ body {
     font-size: 35px;
     cursor: pointer;
 }
+
+.rating-box.introAnimate {
+    animation: loadingAnimation 0.3s linear forwards;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(0.7);
+    }
+    40% {
+        transform: scale(0.5);
+    }
+    60%{
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
